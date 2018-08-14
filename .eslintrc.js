@@ -25,9 +25,13 @@ module.exports = {
   rules: {
     //'semi': ["error", "always"],//必须分号
     'semi': ["error", "always"],//必须分号
+    'indent':0,
+    'space-before-blocks':0,
+    'space-before-function-paren':0,
+    'object-property-newline':0,//关闭验证规则【0['off']：通过，1：'warn'警告，2：'error'报错】
     // allow async-await
     'generator-star-spacing': 'off',
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }
-}
+};

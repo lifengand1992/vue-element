@@ -5,7 +5,11 @@
     </el-aside>
     <el-container class="main">
       <el-header class="m-header"></el-header>
-      <el-main class="m-main"><router-view/></el-main>
+      <el-main class="m-main">
+        <transition>
+          <router-view/>
+        </transition>
+      </el-main>
     </el-container>
   </el-container>
 </template>
